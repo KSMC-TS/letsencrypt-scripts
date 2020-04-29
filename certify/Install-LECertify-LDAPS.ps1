@@ -8,7 +8,7 @@
     Last updated:   04/29/2020
     Creation date:  04/29/2020
     Author:         Zachary Choate
-    URL:            https://raw.githubusercontent.com/zchoate/letsencrypt-scripts/master/certify/Install-LE-LDAPS-Certify.ps1
+    URL:            https://raw.githubusercontent.com/zchoate/letsencrypt-scripts/master/certify/Install-LECertify-LDAPS.ps1
 #>
 
 param($result)
