@@ -1,3 +1,10 @@
+<#
+.DESCRIPTION
+  This script will install certificates for an RDS environment.
+  This script is dependent on CertifyTheWeb - download here: https://certifytheweb.com/home/download.
+  Run this script outside of production hours by disabling the Certify service until a brief interruption is tolerated in RDS.
+#>
+
 param($result)
 
 Import-Module RemoteDesktopServices
