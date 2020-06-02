@@ -15,8 +15,6 @@ param($result)
 
 $thumbprint = $result.ManagedItem.CertificateThumbprintHash
 
-$currentCert = "HKLM:\SOFTWARE\Microsoft\SystemCertificates\MY\Certificates\$thumbprint"
-
 $instanceNames = Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server\Instance Names\SQL"
 $instances = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server").InstalledInstances
 
