@@ -4,11 +4,11 @@
     Install certificate generated from CertifyTheWeb to MSSQL instances and restart associated instances.
     Script is service impacting as SQL services are restarted. Schedule renewals accordingly.
 .NOTES
-    Version:        0.2
-    Last updated:   06/01/2020
+    Version:        0.2.1
+    Last updated:   06/08/2020
     Creation date:  06/01/2020
     Author:         Zachary Choate
-    URL:            https://raw.githubusercontent.com/zchoate/letsencrypt-scripts/master/certify/Install-LECertify-MsSql.ps1
+    URL:            https://raw.githubusercontent.com/KSMC-TS/letsencrypt-scripts/master/certify/Install-LECertify-MsSql.ps1
 #>
 
 param($result)
