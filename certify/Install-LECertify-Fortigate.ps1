@@ -5,11 +5,7 @@
         Apply certificate as admin interface certificate.
         Remove old certificate.
     .NOTES
-        You'll need to encrypt the Fortigate API token for use with this script:
-            $token = Read-Host -AsSecureString
-            $tokenFile = ConvertFrom-SecureString -SecureString $token -Key (1..16)
-            $tokenFile | Set-Content PathToTokenFile.txt
-        This will need to be run in the same context that the CertifyTheWeb service is run under (SYSTEM)
+        Refer to https://github.com/KSMC-TS/docs/blob/master/fortinet/AutomatedCertificateRenewal/readme.md for setup instructions.
         
 #>
 
