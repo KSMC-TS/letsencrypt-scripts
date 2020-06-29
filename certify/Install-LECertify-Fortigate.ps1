@@ -25,8 +25,6 @@ $sourcePFX = $result.ManagedItem.CertificatePath
 $pfx = Get-Content $sourcePFX -Encoding Byte
 $pfx = [System.Convert]::ToBase64String($pfx)
 
-<# Uncomment this section to allow connections to URLs not secured with a trusted certificate.
-
 # Ignore invalid certificate warning
 add-type @"
     using System.Net;
@@ -41,8 +39,6 @@ add-type @"
 "@
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Ssl3, [Net.SecurityProtocolType]::Tls, [Net.SecurityProtocolType]::Tls11, [Net.SecurityProtocolType]::Tls12
-
-#>
 
 # Define some variables
 $baseUrl = "https://$fortigateAddress`:$fortigateAdminPort/api/v2"
@@ -84,7 +80,7 @@ $adminSettingsBody = @{
 $adminSettingsJson = $adminSettingsBody | ConvertTo-Json
 
 # Get current certificate used for VPN
-$currentCert = Invoke-RestMethod -Uri $updateUrl -Headers $requestHeader -Method Get
+$currentCert = Invoke-RestMethod -Uri $vpnSettingsUrl -Headers $requestHeader -Method Get
 $currentCert = $currentCert.results.servercert
 
 # Execute post for uploading new cert
