@@ -5,7 +5,7 @@
         Apply certificate as admin interface certificate.
         Remove old certificate.
     .NOTES
-        Refer to https://github.com/KSMC-TS/docs/blob/master/fortinet/AutomatedCertificateRenewal/readme.md for setup instructions.
+        Refer to https://github.com/KSMC-TS/docs/blob/main/fortinet/AutomatedCertificateRenewal/readme.md for setup instructions.
         
 #>
 
