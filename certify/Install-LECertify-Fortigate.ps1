@@ -8,7 +8,7 @@
 .NOTES
     Refer to https://github.com/KSMC-TS/docs/blob/main/fortinet/AutomatedCertificateRenewal/readme.md for setup instructions.
 
-    Updated:    07/02/2020
+    Updated:    07/05/2020
     Author:     Zach Choate
         
 #>
