@@ -70,7 +70,7 @@ $newCertJson = $newCertBody | ConvertTo-Json
 
 # Upload CA cert
 $caCertPath = "/monitor/vpn-certificate/ca/import"
-$caCertUrl = "$baseUrl$newCertPath"
+$caCertUrl = "$baseUrl$caCertPath"
 $caCertBody = @{
     import_method="file"
     scope="global"
